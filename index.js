@@ -5,6 +5,10 @@ const port = 3000;
 const delta = require("./delta-obfuscated.js");
 const { URL } = require("url"); // Import URL dari Node.js untuk validasi
 
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
+
 app.get("/api/delta", async function (req, res) {
   let url = req.query.u;
 
