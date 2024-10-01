@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 //const deltaNew = require("./deltaNew.js");
-const delta = require("./delta-obfuscated.js");
+const delta = require("./delta-obfuscated");
 const { URL } = require("url"); // Import URL dari Node.js untuk validasi
 
 app.get("/", (req, res) => {
@@ -11,7 +11,6 @@ app.get("/", (req, res) => {
 
 app.get("/api/delta", async function (req, res) {
   let url = req.query.u;
-
   // Cek apakah query parameter 'u' ada
   if (!url) {
     return res.status(400).json({
