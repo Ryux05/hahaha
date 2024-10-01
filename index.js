@@ -4,6 +4,7 @@ const port = 3000;
 //const deltaNew = require("./deltaNew.js");
 const delta = require("./delta-obfuscated");
 const { URL } = require("url"); // Import URL dari Node.js untuk validasi
+const axios = require("axios");
 
 app.get("/", (req, res) => {
   res.send("brbrbrb");
