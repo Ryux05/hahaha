@@ -6,7 +6,7 @@ const delta = require("./delta-obfuscated");
 const { URL } = require("url"); // Import URL dari Node.js untuk validasi
 
 app.get("/", (req, res) => {
-  res.send("hello world");
+  res.send("brbrbrb");
 });
 
 app.get("/api/delta", async function (req, res) {
